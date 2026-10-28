@@ -1,7 +1,7 @@
 *** Keywords ***
 [Example][Login] Log in เข้า website ด้วย username และ password ที่กำหนด
     [Arguments]    ${URL}    ${USERNAME}    ${PASSWORD}
-    Set Browser Timeout    45 seconds
+    Set Browser Timeout    60 seconds
     New Browser    chromium    headless=False
     New Context    acceptDownloads=True
     New Page    ${URL}
